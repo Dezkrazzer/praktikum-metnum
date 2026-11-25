@@ -1,0 +1,25 @@
+PETUNJUK MENJALANKAN PROGRAM HISAB (GNU Octave)
+================================================
+1. Ekstrak semua file ke SATU folder (misalnya D:\hisab_pnl).
+2. Buka GNU Octave, lalu pindah ke folder itu:
+       cd D:\hisab_pnl
+3. Jalankan:
+       hisab_main
+4. Waktu jalan sekitar 1-5 menit (ada pemindaian grid se-Indonesia untuk
+   5 tanggal; peta 7 Feb 2027 memakai grid 0,5 derajat).
+5. Output: tabel di Command Window + 5 file PNG:
+       grafik1_fungsi_ijtimak.png, grafik2_konvergensi.png,
+       grafik3_lebar_interval.png, grafik4_tinggi_hilal.png,
+       grafik5_peta_hilal_2027.png
+6. Kirim tangkapan layar Command Window (Bagian 1-4) dan kelima grafik
+   untuk penulisan laporan progres.
+
+Daftar file:
+  hisab_main.m            skrip utama
+  jd_kalender.m, jd_ke_jam.m          konversi waktu
+  nutasi.m, posisi_matahari.m, posisi_bulan.m, ekliptika_ke_ekuator.m,
+  waktu_sideris.m, tinggi_benda.m, refraksi.m     model posisi (Meeus 1998)
+  f_ijtimak.m, g_terbenam.m, data_hilal.m         persamaan nonlinier & hilal
+  biseksi.m, regula_falsi.m, secant.m, itp.m      metode numerik
+  iter_sampai.m, datevec_jd.m, rentang_indonesia.m   evaluasi & grid Indonesia
+  moon_lr.csv, moon_b.csv  tabel 47.A dan 47.B Meeus (dari PyMeeus)
