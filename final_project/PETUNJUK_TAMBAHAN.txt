@@ -1,0 +1,15 @@
+PETUNJUK ANALISIS TAMBAHAN (Minggu 15)
+======================================
+1. Salin hisab_tambahan.m dan horizons_ijtimak.csv ke folder yang SAMA
+   dengan file hisab_main sebelumnya (semua fungsi .m dipakai ulang).
+2. Di Octave:   cd <folder>   lalu   hisab_tambahan
+3. Waktu jalan kira-kira 1-3 menit (tanpa pemindaian grid).
+4. Kirim kembali:
+   - tangkapan layar Command Window Bagian A, B, C
+   - grafik3b_lebar_interval.png   (grafik 3 yang sumbu-y-nya diperbaiki)
+   - grafik4b_tinggi_hilal.png     (opsional, jika grafik 4 buatan teman belum dipakai)
+   - grafik6_selisih_horizons.png
+   - grafik7_metode_terbenam.png
+   - grafik8_konvergensi_terbenam.png
+Sumber data CSV: JPL Horizons API, kuantitas 31 (ObsEcLon, ObsEcLat),
+pusat 500@399 (geosentris), langkah 2 menit, diambil 26 Nov 2026.
